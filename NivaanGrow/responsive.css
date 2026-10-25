@@ -1,0 +1,96 @@
+@media (max-width: 1080px) {
+  .navbar { gap: 16px; } .nav-content { gap: 18px; } .nav-links { gap: 16px; } .nav-link { font-size: 12px; } .nav-cta { padding: 0 13px; font-size: 12px; }
+  .hero-orbit-two { width: 500px; height: 500px; }
+  .hero { gap: 30px; } .hero h1 { font-size: clamp(42px,5.6vw,57px); } .growth-card { right: -4px; } .about-preview { gap: 55px; } .why-layout { gap: 65px; } .contact-section { gap: 38px; }
+}
+@media (max-width: 900px) {
+  .navbar { min-height: 74px; }
+  .nav-toggle { display: flex; }
+  .nav-content { position: absolute; top: 100%; right: 0; left: 0; display: none; align-items: stretch; flex-direction: column; gap: 13px; padding: 15px max(28px,calc((100vw - 820px)/2)) 22px; border-bottom: 1px solid var(--line); background: #fff; box-shadow: 0 18px 25px rgba(23,32,51,.09); }
+  .nav-content.is-open { display: flex; }
+  .nav-links { display: grid; grid-template-columns: repeat(3,1fr); gap: 0 18px; }
+  .nav-link { min-height: 42px; border-bottom: 1px solid #f0f2f6; }
+  .nav-link::after { bottom: -1px; }
+  .nav-cta { align-self: flex-start; min-height: 42px; }
+  .hero { min-height: 520px; padding-top: 56px; padding-bottom: 55px; gap: 22px; }
+  .hero-visual { min-height: 355px; }
+  .hero-image-frame { height: 300px; border-radius: 23px 75px 23px 23px; }
+  .hero-orbit-one { width: 370px; height: 370px; } .hero-orbit-two { width: 360px; height: 360px; }
+  .growth-card { top: 34px; right: -5px; } .idea-card { bottom: 20px; left: -8px; }
+  .value-grid { grid-template-columns: repeat(2,1fr); } .about-preview { gap: 38px; } .service-grid { grid-template-columns: repeat(2,1fr); }
+  .service-card { min-height: 202px; } .steps-grid { grid-template-columns: repeat(2,1fr); row-gap: 32px; }
+  .why-layout { grid-template-columns: 1fr 1fr; gap: 35px; } .faq-section { gap: 45px; }
+  .page-hero { gap: 35px; } .page-hero-art { height: 280px; } .contact-section { grid-template-columns: .7fr 1.3fr; gap: 25px; }
+  .footer-main { grid-template-columns: 1.4fr 1fr 1fr; } .footer-contact-column { grid-column: 2 / 4; }
+}
+@media (max-width: 640px) {
+  html { scroll-padding-top: 76px; }
+  .section-wrap, .navbar, .footer-main, .footer-bottom { width: calc(100% - 38px); }
+  .section { padding-top: 72px; padding-bottom: 72px; }
+  .navbar { min-height: 68px; gap: 9px; }
+  .brand img { width: 104px; height: 86px; } .footer-brand .brand img { width: 128px; height: 106px; }
+  .nav-content { padding: 12px 19px 19px; } .nav-links { grid-template-columns: repeat(2,1fr); gap: 0 14px; } .nav-link { font-size: 12px; } .nav-cta { width: 100%; }
+  h2 { font-size: clamp(29px,8vw,38px); letter-spacing: -1.2px; } .eyebrow { margin-bottom: 13px; font-size: 10px; }
+  .section-heading { margin-bottom: 30px; } .section-heading p { font-size: 13px; }
+  .section-heading:not(.centered) { align-items: flex-start; flex-direction: column; gap: 14px; } .desktop-link { display: none; } .mobile-link { margin-top: 23px; display: inline-flex; }
+  .hero { min-height: initial; padding-top: 45px; padding-bottom: 47px; grid-template-columns: 1fr; gap: 22px; }
+  .hero h1 { margin-bottom: 15px; font-size: clamp(38px,10vw,53px); letter-spacing: -2.4px; } .hero-lead { margin-bottom: 21px; font-size: 14px; }
+  .button { min-height: 46px; padding-right: 15px; padding-left: 15px; font-size: 12px; } .hero-note { margin-top: 17px; font-size: 10px; }
+  .hero-visual { min-height: 300px; margin: 0 10px; } .hero-image-frame { width: 88%; height: 265px; border-width: 6px; border-radius: 18px 65px 18px 18px; }
+  .hero-orbit-one { width: min(90vw,320px); height: min(90vw,320px); } .hero-orbit-two { width: min(100%,365px); height: min(100%,365px); }
+  .floating-card { padding: 9px 11px; gap: 8px; } .growth-card { top: 15px; right: -5px; }
+  .floating-card strong { font-size: 10px; } .floating-card small { font-size: 8px; } .floating-icon { width: 29px; height: 29px; font-size: 18px; }
+  .idea-card { bottom: 6px; left: -7px; font-size: 9px; } .idea-spark { font-size: 20px; }
+  .trust-inner { width: calc(100% - 38px); min-height: 60px; justify-content: center; flex-wrap: wrap; gap: 8px 12px; padding: 10px 0; font-size: 9px; } .trust-inner i { width: 3px; height: 3px; }
+  .value-grid, .service-grid { grid-template-columns: 1fr 1fr; gap: 11px; } .value-card { padding: 18px 15px; }
+  .value-card h3, .service-card h3 { font-size: 14px; } .value-card p { font-size: 11px; } .icon-tile { width: 37px; height: 37px; margin-bottom: 14px; font-size: 18px; }
+  .about-preview { padding-top: 35px; padding-bottom: 76px; grid-template-columns: 1fr; gap: 34px; } .about-image { min-height: 275px; margin: 0 9px 0 5px; }
+  .about-image img { height: 275px; border-bottom-right-radius: 55px; } .image-caption { right: -6px; bottom: -9px; padding: 10px 13px; font-size: 10px; }
+  .about-copy p { font-size: 13px; } .service-card { min-height: 200px; padding: 17px 14px; }
+  .service-icon { width: 34px; height: 34px; margin-bottom: 14px; font-size: 17px; } .service-card p { min-height: 55px; font-size: 10px; } .service-card a { font-size: 10px; }
+  .audience-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .audience-card { min-height: 150px; padding: 16px 14px; }
+  .audience-card > span { margin-bottom: 11px; font-size: 9px; } .audience-card h3 { font-size: 13px; } .audience-card p { font-size: 10px; line-height: 1.6; }
+  .steps-grid { gap: 25px 16px; } .step-number { font-size: 22px; } .step-line { margin: 10px 0 13px; } .step-card h3 { font-size: 13px; } .step-card p { font-size: 10px; } .center-action { margin-top: 25px; }
+  .project-grid { grid-template-columns: 1fr; gap: 15px; } .project-image { height: 215px; } .project-info { padding: 16px; } .project-info h3 { font-size: 14px; }
+  .why-layout { grid-template-columns: 1fr; gap: 36px; } .why-copy h2 { font-size: 36px; } .why-item { gap: 12px; }
+  .faq-section { grid-template-columns: 1fr; gap: 30px; } .faq-intro h2 br { display: none; } .faq-item { padding: 16px 0; } .faq-item summary { font-size: 12px; } .faq-item p { font-size: 11px; }
+  .cta-section { padding-top: 0; padding-bottom: 70px; } .cta-panel { padding: 38px 23px; border-radius: 13px; } .cta-panel h2 { font-size: 33px; } .cta-panel p { font-size: 12px; } .cta-panel .button-row { gap: 9px; } .cta-panel .button { margin: 0; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 29px 19px; padding-bottom: 34px; } .footer-brand { grid-column: 1 / -1; } .footer-contact-column { grid-column: auto; }
+  .site-footer { padding-top: 48px; } .footer-brand p { font-size: 12px; } .footer-heading { margin-bottom: 12px; font-size: 12px; }
+  .footer-links a, .footer-contact a, .footer-contact span { font-size: 11px; } .footer-bottom { align-items: flex-start; flex-direction: column; gap: 12px; font-size: 10px; } .footer-legal { gap: 15px; }
+  .back-to-top { right: 13px; bottom: 13px; width: 40px; height: 40px; }
+  .page-hero { min-height: initial; padding-top: 43px; padding-bottom: 50px; grid-template-columns: 1fr; gap: 25px; }
+  .page-hero h1 { font-size: clamp(39px,10vw,52px); letter-spacing: -2.2px; } .page-hero-copy > p { font-size: 13px; }
+  .page-hero-art { height: 250px; border-width: 5px; border-radius: 14px 55px 14px 14px; }
+  .split-section { padding-top: 42px; padding-bottom: 60px; grid-template-columns: 1fr; gap: 28px; } .split-copy p { font-size: 13px; }
+  .soft-quote { padding: 27px; } .soft-quote p { font-size: 18px; } .values-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .mission-grid { padding-top: 55px; padding-bottom: 55px; grid-template-columns: 1fr; gap: 12px; } .mission-card { padding: 25px; } .mission-card h2 { font-size: 24px; }
+  .principle-row { grid-template-columns: 1fr 1fr; gap: 9px; } .principle-row span { padding: 12px 8px; font-size: 10px; }
+  .service-intro, .journey-section, .portfolio-section { padding-top: 34px; padding-bottom: 65px; }
+  .service-detail { padding: 20px 16px; grid-template-columns: 40px 1fr; gap: 12px; } .service-detail-number { width: 36px; height: 36px; border-radius: 9px; font-size: 12px; }
+  .service-detail-content h2 { font-size: 22px; } .service-detail-content > p { font-size: 12px; } .detail-columns { grid-template-columns: 1fr; gap: 12px; }
+  .journey-step { padding-left: 58px; padding-bottom: 30px; } .journey-step:not(:last-child)::before { left: 18px; }
+  .journey-marker { width: 38px; height: 38px; font-size: 11px; } .journey-content h2 { font-size: 22px; } .journey-content p, .journey-content li { font-size: 12px; }
+  .process-promise { padding: 34px 0; } .promise-inner { align-items: flex-start; gap: 15px; } .promise-inner h2 { font-size: 20px; } .promise-inner p { font-size: 11px; }
+  .filter-list { justify-content: flex-start; gap: 7px; } .filter-button { min-height: 34px; padding: 0 11px; font-size: 10px; }
+  .contact-section { padding-top: 25px; padding-bottom: 65px; grid-template-columns: 1fr; gap: 25px; } .contact-aside { padding-top: 0; } .contact-aside h2 { font-size: 31px; }
+  .contact-form-card { padding: 21px 16px; } .form-heading h2 { font-size: 22px; } .form-grid { grid-template-columns: 1fr; gap: 13px; } .form-field-wide { grid-column: auto; }
+  .quick-contact-inner { align-items: flex-start; flex-direction: column; gap: 16px; } .quick-contact .button-row { flex-wrap: wrap; }
+  .legal-hero { padding-top: 48px; padding-bottom: 24px; } .legal-hero h1 { font-size: 39px; } .review-alert { font-size: 11px; }
+  .legal-content { padding-top: 5px; padding-bottom: 45px; } .legal-content h2 { font-size: 17px; } .legal-content p { font-size: 12px; }
+  .not-found { min-height: 590px; padding-top: 45px; padding-bottom: 60px; } .not-found-art { height: 125px; gap: 12px; font-size: 100px; }
+  .not-found-mark { width: 85px; height: 85px; border-radius: 21px; font-size: 36px; } .not-found h1 { font-size: 37px; } .not-found > p { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .section-wrap, .navbar, .footer-main, .footer-bottom { width: calc(100% - 30px); }
+  .hero h1 { font-size: 37px; } .hero-visual { margin: 0; } .floating-card { max-width: 180px; } .growth-card { right: -4px; }
+  .value-grid, .service-grid { gap: 8px; } .value-card, .service-card { padding-right: 11px; padding-left: 11px; } .audience-grid { gap: 8px; }
+  .brand { gap: 7px; } .brand img { width: 94px; height: 78px; } .footer-brand .brand img { width: 120px; height: 100px; } .nav-toggle { width: 40px; height: 40px; }
+}
+@media (max-width: 760px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .price-card > p { min-height: initial; }
+  .service-index { justify-content: flex-start; }
+  .portfolio-dialog { padding: 10px; }
+  .portfolio-dialog form { top: 17px; right: 17px; }
+}
